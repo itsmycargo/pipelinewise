@@ -422,6 +422,7 @@
         "tap-snowflake",
         "tap-salesforce",
         "tap-jira",
+        "tap-sentry",
         "tap-zuora",
         "tap-google-analytics",
         "tap-github",

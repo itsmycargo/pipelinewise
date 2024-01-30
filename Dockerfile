@@ -4,13 +4,14 @@ ARG connectors=all
 
 RUN apt-get -qq update \
     && apt-get -qqy --no-install-recommends install \
-        apt-utils \
         alien \
+        apt-utils \
+        git \
         gnupg \
         libaio1 \
+        libpq-dev \
         mbuffer \
         wget \
-        libpq-dev \
     && rm -rf /var/lib/apt/lists/* \
     && pip install -U --no-cache-dir pip
 

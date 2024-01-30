@@ -17,6 +17,7 @@ class ConnectorType(enum.Enum):
     TAP_POSTGRES = 'tap-postgres'
     TAP_S3_CSV = 'tap-s3-csv'
     TAP_SALESFORCE = 'tap-salesforce'
+    TAP_SENTRY = 'tap-sentry'
     TAP_SHOPIFY = 'tap-shopify'
     TAP_SLACK = 'tap-slack'
     TAP_SNOWFLAKE = 'tap-snowflake'

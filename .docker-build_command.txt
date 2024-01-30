@@ -4,6 +4,7 @@ docker build \
 tap-github,\
 tap-s3-csv,\
 tap-jira,\
+tap-sentry,\
 tap-postgres,\
 target-postgres,\
 transform-field\

@@ -1,0 +1,1 @@
+tap-sentry @ git+https://github.com/itsmycargo/tap-sentry@master
