@@ -1,3 +1,73 @@
+0.66.1 (2024-10-31)
+-------------------
+- Bug fix for partial sync multiprocessing
+
+
+0.66.0 (2024-10-11)
+-------------------
+- Bump programming language to Python 3.10
+- Bump `ansible-core` from `2.11.8` to `2.17.5`
+- Bump `tzlocal` from `2.1.*` to `4.0.2` in `tap-mongodb`
+- Bump `tzlocal` from `2.1` to `4.0.2` in `tap-mysql`
+- Bump `pipelinewise-singer-python` from `1.*` to `2.*` in `target-postgres`
+- Bump `pipelinewise-singer-python` from `1.*` to `2.*` in `target-snowflake`
+
+
+0.65.3 (2024-09-13)
+-------------------
+- Bump `zenpy` in `tap-zendesk` from `2.0.0` to `2.0.52`
+
+0.65.2 (2024-09-05)
+-------------------
+- Pin tap-zendesk to v1.2.1
+
+0.65.0 (2024-08-27)
+-------------------
+- Remove FastSync for target Redshift
+- Remove FastSync for target Bigquery
+- Incorporate used singer connectors into main codebase
+- Reduce testing codebase
+- Simplify Makefile
+
+0.64.1 (2024-07-25)
+-------------------
+- Remove row count check in `sync_tables` for `tap_mysql` and `tap_postgres`
+
+0.64.0 (2024-07-19)
+-------------------
+- Update `sync_tables` and `import_config` commands
+  - new optional config setting for source tables size checking
+  - checking the size of source tables in `tap_mysql` and `tap_postgres` to `target_snowflake` and failing fast sync
+    if the size is not allowed
+  - added `--force` argument for `sync_tables` command to ignore size checking
+
+0.63.0 (2024-07-08)
+---------------------
+- Bump `pipelinewise-tap-jira`from `2.0.1` to `2.2.0`
+- Bump `jinja2`from `3.0.2` to `3.1.2`
+- Update Github Actions
+
+0.60.2b1 (2024-06-12)
+---------------------
+- Bump `pymongo`from `4.7.3` to `3.13.0`
+
+0.60.1 (2024-06-12)
+-------------------
+- Bump `pymongo`from `3.12.3` to `4.7.3`
+
+0.60.0 (2024-05-10)
+-------------------
+- Bump `pipelinewise-tap-mysql`from `1.5.6` to `1.6.0`
+- Attempt SSL for MariaDB and PG sources as Preferred connection method
+
+0.58.3 (2023-11-28)
+-------------------
+- Bump `pipelinewise-tap-kafka`from `8.2.0` to `8.2.1`
+
+0.58.2 (2023-11-20)
+-------------------
+- Bump `pipelinewise-tap-kafka`from `8.1.0` to `8.2.0`
+
 0.58.1 (2023-10-09)
 -------------------
 - Bump `pipelinewise-tap-github`from `1.1.0` to `1.1.1`
