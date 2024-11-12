@@ -1,5 +1,5 @@
 docker build \
-  --platform=linux/amd64 \
+  --platform=linux/arm64 \
   --build-arg connectors="\
 tap-github,\
 tap-s3-csv,\
@@ -9,5 +9,5 @@ tap-postgres,\
 target-postgres,\
 transform-field\
 " \
-  -t itsmybot/pipelinewise:0.58.1-stripped \
+  -t itsmybot/pipelinewise:0.66.1-stripped \
   .
